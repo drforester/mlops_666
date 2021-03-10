@@ -22,7 +22,7 @@ jobs:
            pip install -r src/requirements.txt
           
            # Pull dataset with DVC 
-           dvc pull data
+           dvc pull
           
            # Reproduce pipeline if any changes detected in dependencies
            dvc repro 
