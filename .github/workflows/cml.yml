@@ -23,8 +23,9 @@ jobs:
            dvc version
            pip install -r src/requirements.txt
           
-           # Pull dataset with DVC 
-           dvc pull
+           # Pull dataset with DVC
+           echo "doing dvc pull -v here ..."
+           dvc pull -v
           
            # Reproduce pipeline if any changes detected in dependencies
            dvc repro 
