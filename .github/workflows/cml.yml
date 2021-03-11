@@ -19,8 +19,8 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           GDRIVE_CREDENTIALS_DATA: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
         run: |
-           echo "doing where dvc ... "
-           where dvc
+           echo "doing which dvc ... "
+           which dvc
            pip install -r src/requirements.txt
           
            # Pull dataset with DVC
