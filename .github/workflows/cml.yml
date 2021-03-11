@@ -20,6 +20,7 @@ jobs:
           GDRIVE_CREDENTIALS_DATA: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
         run: |
            pip install -r src/requirements.txt
+           pip freeze
           
            # Pull dataset with DVC 
            dvc pull
