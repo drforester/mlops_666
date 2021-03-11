@@ -2,3 +2,4 @@ pandas
 pyaml
 scikit-learn
 scipy
+google-api-python-client
