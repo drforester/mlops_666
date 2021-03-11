@@ -19,13 +19,12 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           GDRIVE_CREDENTIALS_DATA: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
         run: |
-           echo "checking dvc version ..."
-           dvc version
+           echo "doing dvc pull -v here ..."
+           dvc pull -v
            pip install -r src/requirements.txt
           
            # Pull dataset with DVC
-           echo "doing dvc pull -v here ..."
-           dvc pull -v
+           #dvc pull
           
            # Reproduce pipeline if any changes detected in dependencies
            dvc repro 
