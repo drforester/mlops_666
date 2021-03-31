@@ -21,6 +21,7 @@ jobs:
            pip install dvc[gdrive]
           
            # Pull dataset with DVC
+           echo "pull dataset with DVC"
            #dvc pull
           
            # Reproduce pipeline if any changes detected in dependencies
